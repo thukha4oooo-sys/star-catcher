@@ -1,0 +1,13 @@
+{
+  "name": "ကြယ်ပွင့်ဖမ်းသူ",
+  "short_name": "ကြယ်ဖမ်းသူ",
+  "description": "ကြယ်တွေကို ဖမ်းပြီး အမှတ်ရယူပါ။",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0a18",
+  "theme_color": "#17152d",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

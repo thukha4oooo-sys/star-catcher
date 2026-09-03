@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ကြယ်ပွင့်ဖမ်းသူ</title>
+  <meta name="theme-color" content="#17152d" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <section class="topbar">
+      <div>
+        <p class="eyebrow">NIGHT SKY ARCADE</p>
+        <h1>ကြယ်ပွင့်ဖမ်းသူ</h1>
+      </div>
+      <div class="top-actions">
+        <button id="installBtn" class="install-btn" hidden>App ထည့်မယ်</button>
+        <button id="startBtn" class="start-btn">ဂိမ်းစမယ်</button>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="ဂိမ်းအချက်အလက်">
+      <div class="stat"><span>အမှတ်</span><strong id="score">0</strong></div>
+      <div class="stat"><span>အသက်</span><strong id="lives">3</strong></div>
+      <div class="stat"><span>အမြင့်ဆုံး</span><strong id="best">0</strong></div>
+    </section>
+
+    <div class="canvas-wrap">
+      <canvas id="gameCanvas" width="900" height="560" aria-label="ကြယ်ပွင့်ဖမ်းရန် ဂိမ်းကွင်း"></canvas>
+      <div id="message" class="message">
+        <div class="message-card">
+          <div class="big-star">★</div>
+          <h2>ညကောင်းကင်ကို ကယ်တင်ပါ!</h2>
+          <p>ကြယ်တွေကို ဖမ်းပြီး အမှတ်ရယူပါ။ ဗုံးတွေကိုတော့ ရှောင်ပါ။</p>
+          <button id="playBtn" class="play-btn">ကစားမယ်</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="controls">
+      <p><b>ကီးဘုတ်:</b> ဘယ်/ညာမြှား သို့မဟုတ် A / D</p>
+      <div class="touch-controls" aria-label="ဖုန်းထိန်းချုပ်ခလုတ်များ">
+        <button class="touch-btn" data-key="ArrowLeft" aria-label="ဘယ်ဘက်ရွှေ့ရန်">◀</button>
+        <button class="touch-btn" data-key="ArrowRight" aria-label="ညာဘက်ရွှေ့ရန်">▶</button>
+      </div>
+    </section>
+    <p class="tip">ကြယ်ပွင့်တစ်လုံး = ၁၀ မှတ် · အပြာရောင်ကြယ် = ၃၀ မှတ် · ဗုံးထိရင် အသက်လျော့မယ်</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
